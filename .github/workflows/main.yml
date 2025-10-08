@@ -115,13 +115,8 @@ jobs:
             # CONFIGURATION - Define paths and repository information
             # ========================================================================
             BASE_PATH=${{ secrets.PROJECT_PATH }}         # e.g., /home/azureuser
-<<<<<<< HEAD
-            PROJECT_DIR="$BASE_PATH/cicd"
+            git PROJECT_DIR="$BASE_PATH/cicd"
             REPO_URL="https://github.com/jay-patidar/cicd.git"
-=======
-            PROJECT_DIR="$BASE_PATH/cicd"                 # Where our app lives
-            REPO_URL="https://github.com/mohneeshchoudhary/cicd.git"
->>>>>>> de4cf0b2b4e4faa548d6f5b387a21dd43c7b7598
 
             # ========================================================================
             # CODE SYNCHRONIZATION - Get latest code from GitHub

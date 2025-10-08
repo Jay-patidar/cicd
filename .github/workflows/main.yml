@@ -115,7 +115,7 @@ jobs:
             # CONFIGURATION - Define paths and repository information
             # ========================================================================
             BASE_PATH=${{ secrets.PROJECT_PATH }}         # e.g., /home/azureuser
-            git PROJECT_DIR="$BASE_PATH/cicd"
+            PROJECT_DIR="$BASE_PATH/cicd"
             REPO_URL="https://github.com/jay-patidar/cicd.git"
 
             # ========================================================================

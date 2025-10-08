@@ -101,7 +101,7 @@ jobs:
       - name: Deploy FastAPI to VM
         run: |
           # Connect to your server and run deployment commands
-          ssh cicd.pem -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
             # ========================================================================
             # SERVER-SIDE DEPLOYMENT SCRIPT
             # ========================================================================
